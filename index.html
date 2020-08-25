@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a portfolio website for Nelson Lieu a game developer and programmer">
+        <meta name="author" content="Nelson Lieu">
+        <title>Nelson Lieu | Portfolio</title>
+        <link rel="stylesheet" href="../CSS/layout.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Home Button -->
+            <a id="homeButton" href="../HTML/about.html">Nelson Lieu</a>
+
+            <!-- Nav Bar -->
+            <nav id="mainNav">
+                <ul>
+                    <li>
+                        <a href="../HTML/about.html#bioSection">About</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/about.html#projectSection">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/about.html#contactSection">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Bio Section -->
+        <section id="bioSection">
+            
+            <img id="bioPic" src="../Images/profileImage.jpg"    alt="Testing">
+
+            <div id="bio">
+                <h1>
+                    Nelson Lieu
+                </h1>
+
+                <h3>
+                    Game Developer / Programmer
+                </h3>
+                <p>
+                    Hello there, Its Nelson, an undergraduate student at Hunter College working towards a BA in Computer Science expecting to graduate in 2023. 
+                    <br>
+                    <br>
+                    Here you can view some projects I have completed, different engines, and programming languages I have worked with.
+                </p>
+            </div>
+        </section>
+
+        <section id="resumeSection">
+            <div class="resumeBox">
+                <h1>
+                    Skills:
+                </h1>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>Python</li>
+                    <li>GML</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+
+            <div class="resumeBox">
+                <h1>
+                    Engines:
+                </h1>
+                <ul>
+                    <li>GameMaker Studio 2</li>
+                    <li>Unity</li>
+                    <li>Android Studio</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="projectSection">
+            <h1>
+                Projects
+            </h1>
+
+            <div id="projectList">
+                <div class="projectFile">
+
+                    <img class="projectImage" id="dnsImage" src="../Images/DnS.png" alt="Dash n Slash">
+
+                    <div class="projectDescription">
+                        <h2>
+                            Dash n' Slash 
+                        </h2>
+
+                        <p>
+                            Dash n' Slash is a small solo project developed in GameMaker Studio 2 using GML. 
+                            <br>
+                            <br>
+                            You play as a lone swordsman fighting off waves of enemies with a unique stun/kill mechanic. You need to carefully set up the enemies like a line of dominos and watch the satisfying execution of your hard work.
+                        </p>
+                        <a href="https://thestreet.itch.io/dash-n-slash" target="_blank">
+                            Click for Itch.io Page
+                        </a>
+                    </div>
+                </div>
+                <div class="projectFile">
+                    <img class="projectImage" src="../Images/todoapp.png" alt="ToDo">
+
+                    <div class="projectDescription">
+                        <h2>
+                            To-Do List App 
+                        </h2>
+
+                        <p>
+                            A simple To-Do List application developed in Android Studio using the Java programming language. In this project I collaborated with another developer. I worked on task and tag system and the interactions between them. 
+                            <br>
+                            <br>
+                            Orgainze your different tasks by assigning them your own tags. Completed tasks are automatically deleted at the end of the day unless they have the recurring tag.
+                        </p>
+                        <p>
+                            There is an Available Download link for mobile only
+                        </p>
+                        <a href="https://github.com/TheStress/ToDoList" target="_blank">
+                                Click for GitHub Page
+                        </a>
+
+                        <br>
+
+                        <a id="androidLink" href="../ToDoListApp/app-release.apk">Click To Download App on Android Devices</a>
+                    </div>
+                </div>
+                <div class="projectFile">
+                    <img class="projectImage" src="../Images/portWeb.png" alt="Website">
+
+                    <div class="projectDescription">
+                        <h2>
+                            Portfolio Website
+                        </h2>
+
+                        <p>
+                            My portfolio webiste, as you can see here, made using HTML and CSS. 
+                        </p>
+                        <a href="../HTML/about.html">
+                                Click for About Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contactSection">
+            <div id="contactInfo">
+                <h1>
+                    Get In Touch:
+                </h1>
+                <p>
+                    lieu.nelson386@gmail.com
+                </p>
+            </div>
+            <form id="contactForm" class="contactForm" action="contactform.php" method="POST">
+                <input class="contactInput" id="nameInput" type="text" name="name" placeholder="Full Name">
+
+                <input class="contactInput" id="emailInput" type="text" name="mail" placeholder="Your e-mail">
+
+                <input class="contactInput" id="subjectInput" type="text" name="subject" placeholder="Subject">
+
+                <textarea class="contactInput" id="textInput" name="message" placeholder="Message" cols="30" rows="10"></textarea>
+
+                <button id="submitButton" type="submit" name="submit">Send Mail</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <small>&copy; Copyright 2020, Nelson Lieu</small>
+        </footer>
+    </body>
+</html>

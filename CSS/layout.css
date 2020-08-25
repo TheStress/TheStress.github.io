@@ -1,0 +1,295 @@
+@font-face {
+    src: url(../Fonts/Electrolize/Electrolize-Regular.ttf);
+    font-family: electrolize;
+}
+
+body {
+    background-color: #181818;
+    color: white;
+    margin: 0;
+    font-family: electrolize;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: max-content;
+
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+#homeButton {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+#homeButton:hover {
+    color:darkgrey;
+}
+
+#mainNav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+#mainNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#mainNav ul li a:hover {
+    color: lightgray;
+}
+
+@media (max-width:500px) {
+    header {
+        justify-content: flex-start;
+        flex-flow: column;
+        height: 150px;
+    }
+}
+
+/* Bio Section */
+#bioSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding:50px;
+    padding-top: 150px;
+}
+
+#bioPic {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#bio {
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+
+    width: 70%;
+}
+
+@media (max-width:500px) {
+    #bioPic {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+    }
+    
+    #bio {
+        font-size: 20px;
+        min-width: 250px;
+        width: 250px;
+    }
+}
+
+/* Resume Section */
+#resumeSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.resumeBox {
+    font-size: 30px;
+    width: 300px;
+    padding: 20px;
+}
+
+@media (max-width:500px) {
+    .resumeBox {
+        font-size: 15px;
+        padding: 0px;
+    }
+}
+
+/* Project Section */
+#projectSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding:20px;
+    background-color: white;
+}
+
+#projectSection h1{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+
+#projectList {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+.projectFile {
+    display: flex;
+    flex-flow: column;
+}
+
+.projectImage {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.projectDescription {
+    background-color: black;
+    width: inherit;
+    height: 600px;
+    padding: 50px;
+
+    font-size: 20px;
+}
+
+.projectDescription a{
+    text-decoration:underline;
+    color: white;
+}
+
+.projectDescription a:hover {
+    color:darkgrey;
+}
+
+#androidLink {
+    visibility: hidden;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #androidLink {
+        visibility: visible;
+    }
+}
+
+@media (max-width:1000px) {
+    #projectList {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1000px 1000px 1000px;
+    }
+
+    .projectDescription {
+        background-color: black;
+        width: inherit;
+        height: 500px;
+        padding: 50px;
+    
+        font-size: 15px;
+    }    
+}
+
+/* Contact Section */
+#contactSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+#contactInfo {
+    font-size: 25px;
+    text-align: center;
+}
+
+#contactForm {
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+
+.contactInput {
+    font-family: inherit;
+    background-color: inherit;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+    border: solid white;
+}
+
+.contactInput text{
+    padding: 3px;
+    margin: 0px;
+}
+
+#nameInput {
+    grid-column: 1 / 2;
+}
+
+#emailInput {
+    grid-column: 2 / 3;
+}
+#subjectInput {
+    grid-column: 1 / 3;
+}
+#textInput {
+    grid-column: 1 / 3;
+}
+
+#submitButton {
+    font-family: inherit;
+    grid-column: 1 / 3;
+    margin: 5px;
+}
+
+@media (max-width:500px) {
+    #contactSection {
+        flex-flow: column;
+    }
+
+    #contactForm {
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        grid-auto-columns: 200px;
+    }
+
+    #nameInput {
+        grid-column: 1 / 2;
+    }
+    
+    #emailInput {
+        grid-column: 1 / 2;
+    }
+    #subjectInput {
+        grid-column: 1 / 2;
+    }
+    #textInput {
+        grid-column: 1 / 2;
+    }
+    
+    #submitButton {
+        grid-column: 1 / 2;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 150px;
+}
