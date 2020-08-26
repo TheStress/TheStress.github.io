@@ -215,7 +215,9 @@ header {
 
 #contactForm {
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
+    width: 400px;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .contactInput {
@@ -234,23 +236,8 @@ header {
     margin: 0px;
 }
 
-#nameInput {
-    grid-column: 1 / 2;
-}
-
-#emailInput {
-    grid-column: 2 / 3;
-}
-#subjectInput {
-    grid-column: 1 / 3;
-}
-#textInput {
-    grid-column: 1 / 3;
-}
-
 #submitButton {
     font-family: inherit;
-    grid-column: 1 / 3;
     margin: 5px;
 }
 
@@ -260,26 +247,7 @@ header {
     }
 
     #contactForm {
-        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-        grid-auto-columns: 200px;
-    }
-
-    #nameInput {
-        grid-column: 1 / 2;
-    }
-    
-    #emailInput {
-        grid-column: 1 / 2;
-    }
-    #subjectInput {
-        grid-column: 1 / 2;
-    }
-    #textInput {
-        grid-column: 1 / 2;
-    }
-    
-    #submitButton {
-        grid-column: 1 / 2;
+        width: 250px;
     }
 }
 
