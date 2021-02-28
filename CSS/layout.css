@@ -140,7 +140,7 @@ header {
 #projectList {
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style-type: none;
 }
 
@@ -183,7 +183,7 @@ header {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1500px) {
     #projectList {
         display: grid;
         grid-template-columns: 100%;
